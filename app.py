@@ -73,7 +73,7 @@ with tab1:
         fig_pendapatan = go.Figure()
         fig_pendapatan.add_trace(go.Scatter(x=df_filtered['Tahun'], y=df_filtered['PAD'], mode='lines+markers', name='PAD', line=dict(color='green')))
         fig_pendapatan.add_trace(go.Scatter(x=df_filtered['Tahun'], y=df_filtered['DAU_Grant'], mode='lines+markers', name='DAU Grant', line=dict(color='blue')))
-        fig_pendapatan.update_layout(title="Komparasi PAD dan DAU Grant", xaxis_title="Tahun", yaxis_title="Nilai", legend=dict(orientation="h", ybottom=-0.2))
+        fig_pendapatan.update_layout(title="Komparasi PAD dan DAU Grant", xaxis_title="Tahun", yaxis_title="Nilai", legend=dict(orientation="h", y=-0.2))
         st.plotly_chart(fig_pendapatan, use_container_width=True)
         
     with col_b:
